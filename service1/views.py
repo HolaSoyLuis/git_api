@@ -36,9 +36,6 @@ def serie_list(request):
 
 @csrf_exempt
 def serie_detail(request, pk):
-    """
-    Retrieve, update or delete a serie.
-    """
     try:
         serie = Serie.objects.get(pk=pk)
     except Serie.DoesNotExist:

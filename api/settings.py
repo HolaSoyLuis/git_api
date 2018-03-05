@@ -102,3 +102,34 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+'''
+create virtualenv [name]
+
+sudo apt-get install python3
+
+dpkg clean
+
+kill 1074
+
+exit()
+
+source activate
+
+pip3 install django
+
+django-admin startproject [project_name]
+
+django-admin startapp [app_name]
+
+localhost:8000/
+
+python manage.py runserver
+
+python3 manage.py check service1
+
+python3 manage.py makemigrations
+
+python3 manage.py migrate
+
+'''

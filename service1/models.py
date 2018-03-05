@@ -34,3 +34,13 @@ class Serie(models.Model):
 
     def __str__(self):
         return '%s %s' % (self.name, self.release_date)
+
+# http http://127.0.0.1:8000/series/1/
+# $http -j POST http://127.0.0.1:8000/series/
+# http -f POST http://127.0.0.1:8000/series/4 {name = 'Test', release_date = '2010-5-3', rating = 13, category = 'Test'}
+
+# http POST http://localhost:8000/series/ name="hello world" release_date = "2010-5-3" rating = "13" category = "Test"
+# http POST http://localhost:8000/series/ {name="hello world" release_date = "2010-5-3" rating = "13" category = "Test"}
+
+# http POST http://localhost:8000/series/ name="hello world" \ release_date = "2010-5-3" \ rating = "13" \ category = "Test"
+# http POST http://localhost:8000/series/ object := '{"name" : "hello world" , "release_date " : "2010-5-3" , "rating" : "13" , "category" : "Test"}'
